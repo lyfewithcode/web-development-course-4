@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+
+    </head>
+    <body>
+        <p>I am para1</p>
+        <p>I am para2</p>
+        <p>I am para3</p>
+        <p>I am para4</p>
+        <button id="click">Click me</button>
+
+        <script type="text/javascript">
+            
+            $('#click').click(function() {
+                
+                $('p').each(function() {
+                    
+                    // $('body').append('Hi!<br>');
+                    alert($(this).text());
+                });
+            });
+            
+        </script>
+    </body>
+</html>

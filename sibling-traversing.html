@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+        
+    </head>
+    <body>
+        <div class="outer">
+            <h1>Outer Div</h1>
+            <div class="inner">
+                <h1>Inner Div</h1>
+                <div class="last-div">
+                    <p>I am first paragraph</p>
+                    <p>I am second paragraph</p><p>I am first paragraph</p>
+                    <p>I am second paragraph</p><p>I am first paragraph</p>
+                    <p class="middle">I am second paragraph</p><p>I am first paragraph</p>
+                    <p>I am second paragraph</p>
+                    <h1>I am last div</h1>
+                    <p>I am first paragraph</p>
+                    <p>I am second paragraph</p>
+                </div>
+            </div>
+            <p>I am a paragraph</p>
+        </div>
+
+        <script type="text/javascript">
+            // $('.last-div p').siblings().css('border', '2px solid green');
+            // $('.last-div h1').next().css('border', '2px solid green');
+            // $('.last-div p').prev().css('border', '2px solid green');
+            // $('.last-div p').next().css('border', '2px solid green');
+            // $('.last-div h1').prevAll().css('border', '2px solid green');
+            // $('.last-div h1').nextAll().css('border', '2px solid green');
+            $('.last-div h1').prevUntil('.middle').css('border', '2px solid green');
+            
+        </script>
+    </body>
+</html>

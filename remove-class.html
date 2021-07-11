@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <style type="text/css">
+        .white {
+            color: white;
+        }
+
+        .background-green {
+            background-color: green;
+        }
+
+        </style>
+        
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+
+    </head>
+    <body>
+
+        <button id="click">ADD TEXT</button>
+        <button id="click1">Remove Green Background Color from Paragraph</button>
+        
+        <script type="text/javascript">
+            $('#click').click(function() {
+                // $('body').append('<p class="red">I am some text</p>');
+                $('body').append('<p>I am some text</p>');
+
+                $('p').addClass('white background-green');
+
+            });
+
+            $('#click1').click(function() {
+                $('body').append('<p>I am some text</p>');
+                $('p').removeClass('white background-green');
+            });
+            
+        </script>
+    </body>
+</html>

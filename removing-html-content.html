@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+
+    </head>
+    <body>
+        <div class="one">I am div 1
+            <p>I am para1</p>
+            <div class="div2">I am div 2
+                <div>I am div 3</div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // $('.div2').remove();
+            $('.div2').empty();
+
+            $('.div2').append('<b>I still exist inside empty method</b>');
+
+            /*
+            remove - it removes everything (self with children)
+            empty - it removes children but not self
+
+        </script>
+    </body>
+</html>

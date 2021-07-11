@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .status {
+                color: green;
+            }
+        </style>
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+        
+    </head>
+    <body>
+        <button class="load-button">Load</button>
+        <div class="load"></div>
+        <div class="status"></div>
+        <script type="text/javascript">
+            $('.load-button').click(function() {
+                $(".load").load("syntax-load.html #para1", function(response, status, xhr) {
+                    if(status == "success") {
+                        $('.status').html('<p class="success">Action Performed Successfully</p>');
+                    }
+                    
+                    if(status == "error") {
+                        $('.status').html('Action mot Performed');
+                    }
+                });
+            });
+            
+        </script>
+    </body>
+</html>

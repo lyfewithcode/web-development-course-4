@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type="text/css">
+        img {
+            width: 300px;
+        }
+        </style>
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+
+    </head>
+    <body>
+        <p>I am para1</p>
+        <p>I am para2</p>
+        <input type="text" id="name" placeholder="First name">
+        <img src="images/ball.jpg" alt="ball">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                alert($("p:nth-child(2)").html());
+                alert($("p:nth-child(2)").text());
+                alert($("#name").attr('placeholder'));
+                alert($("img").attr('src'));
+                
+                $("p:nth-child(2)").html("<b>Hello, I am new</b>");
+                $("#name").attr('placeholder', 'Last name');
+
+// .val() will get the value of an input field
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+        
+    </head>
+    <body>
+        <div class="outer">
+            <h1>Outer Div</h1>
+            <div class="inner">
+                <h1>Inner Div</h1>
+                <div class="last-div">
+                    <h1>I am last div</h1>
+                    <p>I am first paragraph</p>
+                    <p>I am second paragraph</p>
+                </div>
+            </div>
+            <p>I am a paragraph</p>
+        </div>
+
+        <script type="text/javascript">
+            // $('.outer').children().css('color', 'red');
+            $('.outer').children().css('border', '2px solid green');
+            $('.inner').children().css('border', '2px solid red');
+            
+            $('.outer').find('p').css('border', '2px solid yellow');
+        </script>
+    </body>
+</html>

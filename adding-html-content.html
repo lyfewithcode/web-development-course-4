@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type="text/css">
+        </style>
+        <title></title>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>');
+        </script>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var text1 = '<p class="text1">I am text1</p>'; // using html method
+            var text2 = $('<p class="text2"></p>').text('I am text2'); // using jquery
+            var text3 = document.createElement('p'); // using javascript
+
+            $('body').append(text1, text2);
+
+            $('p.text1').prepend('<b>I am added</b>');
+            $('p.text2').prepend('<i>I am added to text2</i>');
+            $('p.text1').after('<h1>I am heading1</h1>');
+            $('p.text2').before('<h2>I am heading2</h2>');
+
+        </script>
+    </body>
+</html>
